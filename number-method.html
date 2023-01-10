@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+    <!-- 
+        
+
+        Number method :
+        toFixed(n) = Reads (n) digits after decimal
+        toString() = Change integer to string 
+        random() = Give a random number
+        min(a,b,c) = choose the least number
+        max(a,b,c) = choose the most number
+        round() = simplify number  
+        ceil() = simplify number by adding
+        floor() = simplify number by reducing
+
+
+    -->
+
+
+    <p id="toFixed"></p>
+    <p id="toString"></p>
+    <p id="random()"></p>
+    <p id="min"></p>
+    <p id="max"></p>
+    <p id="round"></p>
+    <p id="ceil"></p>
+    <p id="floor"></p>
+    <p id="mathRandom"></p>
+
+    
+    <script>
+        var number1 = 10 ;
+        var number2 = 12.54356729;
+
+    // toFixed
+        var fixnumber = number2.toFixed(2);
+        document.getElementById("toFixed").innerHTML = fixnumber;
+
+    // toString
+        var strnumber = number1.toString() + number2;
+        document.getElementById("toString").innerHTML = strnumber;
+
+    // Random
+        var randnum = Math.random();
+        document.getElementById("random()").innerHTML = randnum;
+
+    // min
+        var minnum = Math.min(1,2,3);
+        document.getElementById("min").innerHTML = minnum;
+
+    // max
+        var maxnum = Math.max(1,2,3);
+        document.getElementById("max").innerHTML = maxnum;
+
+    // round
+        var roundnum = Math.round(124.568);
+        document.getElementById("round").innerHTML = roundnum;
+        
+    // ceil
+        var ceilnum = Math.ceil(123.400)
+        document.getElementById("ceil").innerHTML = ceilnum;
+    //floor
+        var floornum = Math.floor(123.400)
+        document.getElementById("floor").innerHTML = floornum;
+    // Tips for math random
+        var x = 10 ; // <-- for Range 
+        var numberRandom = Math.floor(Math.random() * x ) + 1;
+        document.getElementById("mathRandom").innerHTML = numberRandom;
+    </script>
+</body>
+</html>
