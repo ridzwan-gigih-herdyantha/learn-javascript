@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    
+    <!-- 
+        String Method
+
+        length = Counting letters    
+        indexOf =  Look for the alphabet / teks located 
+        lastIndexOf = Look for the last alphabet / teks located 
+        search = same like lastIndexOf
+        Index started from 0
+        charAt(n) = Look for the alphabet at (n)
+        toUppercase = change the text to uppercase
+        toLowercase = change the text to lowercase
+        replace = to replace the text
+        substring(start,end) = Display the text from the start to the end
+        substr(start,length) = Display the text from the start and length
+        parseInt() = Change string to Integer
+        parseFloat() = Change string to Float
+
+
+    -->
+
+    <p id="length"></p>
+    <p id="indexOf"></p>
+    <p id="lastIndexOf"></p>
+    <p id="charAt"></p>
+    <p id="upcase"></p>
+    <p id="lowcase"></p>
+    <p id="replace"></p>
+    <p id="substring"></p>
+    <p id="substr"></p>
+    <p id="parsei"></p>
+    <p id="parsef"></p>
+
+    <script>
+        
+        var name = "Ridzwan Gigih Herdyantha"
+
+    // length
+        var result = name.length;
+        document.getElementById("length").innerHTML = result;
+
+    // IndexOf 
+        var indof = name.indexOf("a");
+        document.getElementById("indexOf").innerHTML = indof;
+
+    // lastIndexOf
+        var lastindof = name.lastIndexOf("a");
+        document.getElementById("lastIndexOf").innerHTML = lastindof;
+
+    //  charAt
+        var charat = name.charAt(4);
+        document.getElementById("charAt").innerHTML = charat;
+
+    //  toUpperCase
+        var uppercase = name.toUpperCase();
+        document.getElementById("upcase").innerHTML = uppercase;
+
+    //  toLowerCase
+        var lowercase = name.toLowerCase();
+        document.getElementById("lowcase").innerHTML = lowercase;
+
+    //  replace
+        var rep = name.replace("Ridzwan","Rai");
+        document.getElementById("replace").innerHTML = rep;
+
+    // substring
+        var substring = name.substring(0,8);
+        document.getElementById("substring").innerHTML = substring;
+
+    // substr
+        var substr = name.substr(0,9);
+        document.getElementById("substr").innerHTML = substr;
+
+    // parseint
+        var num = "30"; // <-- 30 is a String
+        document.getElementById("parsei").innerHTML = parseInt(num) + 120;
+        
+
+    // parsefloat
+        document.getElementById("parsef").innerHTML = parseFloat(num) + 102.50;
+        
+    </script>
+</body>
+</html>
